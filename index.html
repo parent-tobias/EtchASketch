@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etchasketch playground</title>
+    <link rel='stylesheet' href="./index.css">
+  </head>
+  <body>
+    <article class='etch-a-sketch'>
+      <section class='etch-description'></section>
+      <section class='etch-active-container'>
+        <div class='etch-grid'>
+
+        </div>
+      </section>
+      <footer class='etch-controls'>
+        <fieldset>
+          <fieldset>
+          <legend>Size</legend>
+          <label>Width: <input name="width" placeholder='1-100'></label>
+          <label>Height: <input name="height" placeholder='1-100'></label>
+          <button class="resize-grid">Resize</button>
+          </fieldset>
+          <fieldset>
+            <legend>Color Palette</legend>
+            <label>Black &amp; White: <input type="radio" name="palette" value="bw"></label>
+            <label>Random colors: <input type="radio" name="palette" value="random"></label>
+            <label>Greyscale: <input type="radio" name="palette" value="greyscale"></label>
+          </fieldset>
+          <fieldset>
+            <label>Dots: <input type="checkbox" class="round-toggle"></label>
+          </fieldset>
+        </fieldset>
+      </footer>
+    </article>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

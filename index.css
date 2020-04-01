@@ -1,0 +1,30 @@
+:root {
+  --grid-width: 16;
+  --grid-height: 16;
+}
+.etch-a-sketch{
+  width: 90vmin;
+  display: flex;
+  flex-direction: columns;
+}
+.etch-controls{
+  display: flex;
+  justify-content: space-between;
+}
+.etch-controls > fieldset {
+  display: flex;
+  flex-direction: rows;
+}
+
+.grid-container {
+  width: 85vmin;
+  height: 85vmin;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-width), 1fr);
+  grid-template-rows: repeat(var(--grid-height), 1fr);
+  border: 1px solid silver;
+  background: #000;
+}
+.round {
+  border-radius: 47%;
+}
